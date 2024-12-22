@@ -1,0 +1,38 @@
+# Ignore Python bytecode files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Ignore logs and temporary files
+*.log
+*.tmp
+*.pid
+
+# Ignore test-related files
+.pytest_cache/
+.coverage
+*.cover
+
+# Ignore virtual environment folders
+env/
+venv/
+ENV/
+
+# Ignore local development files
+.DS_Store
+.idea/
+.vscode/
+
+# Ignore configuration files not needed in the container
+.env
+*.env
+
+# Ignore build and distribution files
+build/
+dist/
+*.egg-info/
+
+# Ignore unnecessary Docker Compose overrides
+docker-compose.override.yml
+docker-compose.override.yaml
