@@ -21,4 +21,4 @@ def test_ask_question_endpoint(mock_get_openai_answer, client, test_question_pay
     response_data = response.get_json()
     assert "question" in response_data
     assert "answer" in response_data
-    # assert response_data["answer"] == "The capital of France is Paris."
+    assert response_data["answer"] == "The capital of France is Paris."

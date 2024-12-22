@@ -49,7 +49,7 @@ A Flask-based application leveraging PostgreSQL and Docker for development, test
 **Once the application is running, access it via your browser:**
 
 Development Server: `http://127.0.0.1:5001`
-**You can access the /ask endpoint from the simple front page by asking a question**
+**You can access the `/ask` endpoint from the simple front page by asking a question**
 **and click on the ask button**
 
 
@@ -72,3 +72,5 @@ make logs:	View logs of all running containers.
 make down:	Stop and remove all running containers.
 make test:	Build the test environment and execute tests.
 make restart:	Restart the application services.
+make shell:	Run the shell
+make clean:	Clean up volumes and images

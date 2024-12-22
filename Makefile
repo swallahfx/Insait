@@ -38,3 +38,6 @@ shell:
 # Show the status of containers
 status:
 	$(MAKE) ps
+
+downgrade:
+	$(MAKE) exec app flask db downgrade base

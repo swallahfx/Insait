@@ -10,7 +10,6 @@ class QuestionController:
         # Get the answer from OpenAI
         answer_text = get_openai_answer(question_text)
 
-        # Save the question and answer to the database
         question = Question(question_text=question_text, answer_text=answer_text)
         db.session.add(question)
         db.session.commit()

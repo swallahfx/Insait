@@ -13,13 +13,17 @@ def home():
 
 @question_bp.route("/ask", methods=["POST"])
 def ask_question():
-    data = request.get_json()
-    question_text = data.get("question")
+    try:
+        data = request.get_json()
+        question_text = data.get("question")
 
-    if not question_text:
-        return jsonify({"error": "Question is required"}), 400
+        if not question_text:
+            return jsonify({"error": "Question is required"}), 400
 
-    question_controller = QuestionController()
-    question, answer = question_controller.ask_question(question_text)
+        question_controller = QuestionController()
+        question, answer = question_controller.ask_question(question_text)
 
-    return jsonify({"question": question.question_text, "answer": answer}), 200
+        return jsonify({"question": question.question_text, "answer": answer}), 200
+
+    except Exception as e:
+        return jsonify({"error": "An error occurred while processing the request", "details": str(e)}), 500
