@@ -1,6 +1,6 @@
 # Insait Application
 
-A Flask-based application leveraging PostgreSQL and Docker for development, testing, and deployment. This project is designed with best practices, including containerization, efficient testing, and modular architecture.
+This project is a Flask-based APP that allows users to submit questions and receive answers dynamically. It uses PostgreSQL as the database, with Alembic and Flask-Migrate for efficient database schema management and versioning. It also includes robust error handling and a seamless process for managing migrations and schema changes.
 
 ---
 
