@@ -65,12 +65,12 @@ Development Server: `http://127.0.0.1:5001`
 
 ## Available Makefile Commands
 ***Description***
-make build:	Builds the Docker images.
-make up:	Start all services (app, database, etc.).
-make migrate:	Apply database migrations.
-make logs:	View logs of all running containers.
-make down:	Stop and remove all running containers.
-make test:	Build the test environment and execute tests.
-make restart:	Restart the application services.
-make shell:	Run the shell
-make clean:	Clean up volumes and images
+- `make build`: Builds the Docker images.  
+- `make up`: Start all services (app, database, etc.).  
+- `make migrate`: Apply database migrations.  
+- `make logs`: View logs of all running containers.  
+- `make down`: Stop and remove all running containers.  
+- `make test`: Build the test environment and execute tests.  
+- `make restart`: Restart the application services.  
+- `make shell`: Run the shell.  
+- `make clean`: Clean up volumes and images.  
