@@ -1,0 +1,58 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+
+# Distribution / packaging
+.Python
+env/
+venv/
+ENV/
+*.egg-info/
+*.egg
+
+# Flask cache files
+instance/
+
+# Database files
+*.sqlite3
+
+# Logs
+*.log
+
+# Docker
+*.pid
+.env
+docker-compose.override.yml
+docker-compose.override.yaml
+
+# Test coverage reports
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# pytest
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# System files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.idea/
+.vscode/
+
+# Python virtual environment
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Build directories
+build/
+dist/
