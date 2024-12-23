@@ -11,6 +11,7 @@ This project is a Flask-based APP that allows users to submit questions and rece
 - [Usage](#usage)
 - [Testing](#testing)
 - [Available Makefile Commands](#available-makefile-commands)
+- [Note](#make-issues)
 
 ---
 
@@ -58,6 +59,7 @@ Development Server: `http://127.0.0.1:5001`
 **Make sure environment variable in the .env is set**
 
 ***Run Tests Execute the test suite:***
+**make sure OPENAI_API_KEY is provided in your .env for integration test to work fully**
     `make test `
 
 **View Test Logs Check the test logs for details:**
@@ -74,3 +76,8 @@ Development Server: `http://127.0.0.1:5001`
 - `make restart`: Restart the application services.  
 - `make shell`: Run the shell.  
 - `make clean`: Clean up volumes and images.  
+
+## Make Issues?
+**If you get an error like `make: *No rule to make target make. Stop. `**
+run
+- `make -f makefile`
