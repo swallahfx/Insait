@@ -10,10 +10,9 @@ build:
 migrate:
 	$(MAKE) exec app flask db upgrade
 
-# Run tests in the test profile
+# Run tests
 test:
-	#docker-compose --profile test up --build
-	$(MAKE) --profile test up --build
+	$(MAKE) exec app pytest -s -v
 
 # Stop and remove containers, networks, volumes, and images
 down:
